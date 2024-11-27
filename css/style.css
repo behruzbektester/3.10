@@ -1,0 +1,153 @@
+/* epilogue-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/epilogue-v17-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* epilogue-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/epilogue-v17-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* epilogue-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/epilogue-v17-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Epilogue";
+  color: #686868;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.container {
+  margin-left: 16.5rem;
+  margin-right: 13rem;
+}
+
+.btn {
+  padding: 1.3rem 2.2rem;
+  border: 0.15rem solid #686868;
+  border-radius: 1.4rem;
+  margin-left: 4rem;
+}
+.btn:hover {
+  border-color: #000;
+  color: #000;
+}
+
+.header {
+  padding-top: 2.1rem;
+}
+.header__container {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.header__sitenav {
+  display: flex;
+  gap: 65.3rem;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  gap: 6.2rem;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__login:hover {
+  color: #000;
+}
+
+.main {
+  margin-top: 6.7rem;
+}
+.main__container {
+  display: flex;
+  gap: 12.5rem;
+  align-items: center;
+}
+.main__left {
+  display: flex;
+  flex-direction: column;
+  gap: 5.1rem;
+  justify-content: center;
+}
+.main__heading {
+  width: 54rem;
+  color: #000;
+}
+.main__text {
+  width: 44.5rem;
+}
+.main__btn {
+  padding: 1.5rem 2.8rem 1.3rem 3.1rem;
+  background-color: #000;
+  color: #fff;
+  border: 0.1rem solid transparent;
+  border-radius: 1.5rem;
+  width: 16.9rem;
+  transition: 0.5s;
+  font-weight: 700;
+}
+.main__btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+.main__bottom-logos {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.main__img {
+  width: 48rem;
+}
+.main__logo-img:hover path {
+  fill: #000;
+}/*# sourceMappingURL=style.css.map */

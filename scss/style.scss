@@ -1,0 +1,161 @@
+@import "./functions";
+
+/* epilogue-regular - latin */
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/epilogue-v17-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* epilogue-500 - latin */
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/epilogue-v17-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* epilogue-700 - latin */
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/epilogue-v17-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Epilogue";
+  color: $grey;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.container {
+  margin-left: 16.5rem;
+  margin-right: 13rem;
+}
+
+.btn {
+  padding: 1.3rem 2.2rem;
+  border: 0.15rem solid $grey;
+  border-radius: 1.4rem;
+  margin-left: 4rem;
+  &:hover {
+    border-color: $black;
+    color: $black;
+  }
+}
+
+.header {
+  padding-top: 2.1rem;
+  &__container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  &__sitenav {
+    display: flex;
+    gap: 65.3rem;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    gap: 6.2rem;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__login:hover {
+    color: $black;
+  }
+}
+
+.main {
+  margin-top: 6.7rem;
+  &__container {
+    display: flex;
+    gap: 12.5rem;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 5.1rem;
+    justify-content: center;
+  }
+  &__heading {
+    width: 54rem;
+    color: $black;
+  }
+  &__text {
+    width: 44.5rem;
+  }
+  &__btn {
+    padding: 1.5rem 2.8rem 1.3rem 3.1rem;
+    background-color: $black;
+    color: $white;
+    border: 0.1rem solid transparent;
+    border-radius: 1.5rem;
+    width: 16.9rem;
+    transition: 0.5s;
+    font-weight: 700;
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border-color: $black;
+    }
+  }
+  &__bottom-logos {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  &__img {
+    width: 48rem;
+  }
+  &__logo-img:hover path {
+    fill: $black;
+  }
+}
